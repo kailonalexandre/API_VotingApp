@@ -1,1 +1,1 @@
-# curso_api_netcore
+# Api para o Aplicativo de votações
