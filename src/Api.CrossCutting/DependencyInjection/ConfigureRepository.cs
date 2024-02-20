@@ -20,7 +20,7 @@ namespace Api.CrossCutting.DependencyInjection
             serviceCollecion.AddScoped<IUserRepository, UserImplementation>();
            
             serviceCollecion.AddDbContext<MyContext> (
-                options => options.UseMySql("Server=localhost;Port=3306;Database=dbAPI;Uid=root;Pwd=genesysjp")
+                options => options.UseMySql("Server=localhost;Port=3306;Database=dbAPI;Uid=root;Pwd=genesysjp", new MySqlServerVersion(new Version()))
             );
         }
     }
